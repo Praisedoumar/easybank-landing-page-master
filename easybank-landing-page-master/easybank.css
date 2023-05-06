@@ -85,6 +85,7 @@ nav{
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    position: absolute;
 }
 
 .nav-ul{
@@ -95,6 +96,7 @@ nav{
 .nav-ul li{
     list-style: none;
     margin: 0 1.6rem;
+    padding: 3rem 4rem;
 }
 
 li a{
@@ -162,35 +164,37 @@ nav ul li a:hover::before{
 .welcome-image{
     display:inline-block;
     text-align: center;
-    height: 38rem;
+    width: 80%;
+    height: 30rem;
 }
 .welcome-image::before{
     content: "";
     position: absolute;
     top: 12rem;
     right: 0;
-    width: 60rem;
-    height: 70rem;
+    width: 90rem;
+    height: 90rem;
     background-image: url(./images/bg-intro-mobile.svg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 .welcome-image img{
-    width: 100%;
-    height: 50rem;
-    /* margin-bottom: 4rem; */
+    width: 70%;
+    height: 100rem;
+    margin-bottom: 4rem;
+    margin-right: 15rem;
     transform: translateY(-15rem);
 }
 .welcome-text{
     text-align: center;
-    margin-top: 10rem;
+    margin-top: 9rem;
     margin-bottom: 5rem;
 }
 
 .welcome-text h1{
     font-size: 4rem;
     font-weight: normal;
-    color: var(--dark-blue);
+    color: rgb(85, 85, 163);
     line-height: 6rem;
   
 }
@@ -199,6 +203,52 @@ nav ul li a:hover::before{
     font-size: 1.5rem;
     font-weight: 400;
     color: rgb(27, 109, 27);
+}
+
+/* About Section  */
+/* About Section  */
+/* About Section  */
+/* About Section  */
+
+.about-section{
+    background-color: rgb(211, 214, 221);
+    width: 100%;
+    border-radius: 2px;
+}
+.about{
+    margin: 1rem 3rem;
+}
+
+.about-text{
+    display: inline-block;
+    width: 100%;
+    font-size: medium;
+    text-align: center;
+}
+.heading-secondary{
+    font-size: 5rem;
+    font-weight: normal;
+    color: rgb(4, 128, 86);
+    line-height: 5rem;
+}
+.about-item{
+    display: grid;
+    row-gap: 4rem;
+    column-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+}
+.about-item-box{
+    display: inline-block;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: var(--light-grayish-blue);
+}
+
+.heading-tertiary{
+    font-size: 25px;
+    font-weight: normal;
+    color: darkblue;
+    line-height: 4rem;
 }
 
 
@@ -237,12 +287,12 @@ nav ul li a:hover::before{
 
     .nav-ul{
         flex-direction: column;
-        width: 90%;
+        width: 70%;
         margin: 0 auto;
         padding: 1rem 0;
-        margin-top: 3rem;
+        margin-top: 4rem;
         background-color: var(--white);
-        border: 1px solid rgb(30, 181, 30);
+        border: 1px solid rgb(97, 210, 97);
         border-radius: .4rem;
         transform: translateY(-200%);
         transition: all .5s;
@@ -269,7 +319,7 @@ nav ul li a:hover::before{
         transform: translateY(1%);
     }
     #toggle:checked~ .hamburger{
-        border: 2px red solid;
+        border: 2px rgb(0, 255, 136) solid;
         border-radius: 4px;
         padding: 5px;
     }
@@ -287,7 +337,7 @@ nav ul li a:hover::before{
         height: 38rem;
     }
 
-    .welcome::before{
+    .welcome-image::before{
         top: -35rem;
         right: 0;
         width: 65rem;
@@ -295,11 +345,63 @@ nav ul li a:hover::before{
         background-image: url(./images/bg-intro-desktop.svg);
     }
     .welcome-image img{
-        width: 70%;
-        height: 48rem;
+        width: 50rem;
+        height: 70rem;
         transform: translateY(-15rem);
     }
+    .welcome-text{
+        text-align: center;
+        margin-top: 15rem;
+        margin-bottom: 5rem;
+    }
 
+}
+
+/* From Tablet to PC*/
+/* From Tablet to PC*/
+/* From Tablet to PC*/
+/* From Tablet to PC*/
+@media screen and (min-width:770px){ 
+    .welcome-section{
+        padding: 1rem 0 1rem 0;
+
+    }
+    .container-welcome{
+        flex-direction: row;
+
+    }
+    .welcome-image::before{
+        display: none;
+    }
+    .welcome-text{
+        text-align: left;
+        padding: 2rem 2rem;
+        width: 85%;
+        
+    }
+    .welcome-image{
+        width: 100%;
+        position: relative;
+    }
+    .welcome-image img{
+        position: absolute;
+        width: 40rem;
+        height: 60rem;
+        top: -3rem;
+        right: 0;
+        z-index: 1;
+    }
+      /* About section */
+      /* About section */
+      /* About section */
+    .about-text{
+    width: 50%;
+    text-align: left;
+    }
+    .about-text-box{
+        text-align: left;
+    }
+    
 }
 
     
