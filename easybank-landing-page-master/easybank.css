@@ -251,15 +251,95 @@ nav ul li a:hover::before{
     line-height: 4rem;
 }
 
+/* *************** Article Section**************** */
+/* *************** Article Section**************** */
+/* *************** Article Section**************** */
 
+.article-section{
+    background-color: var(--very-light-gray);
+    
+}
 
+.article{
+    display: grid;
+    row-gap: 5rem;
+    column-gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+}
+.article-box{
+    background-color: var(--white);
+    background-origin: 1px solid transperent;
+    border-radius: .5rem;
+    overflow: hidden;
+}
+/* .article-box:hover{
+    animation-iteration-count: infinite;
+    
+    
+} */
+
+.article-box img{
+    width: 100%;
+    height: 23rem;
+}
+.article-content{
+    padding: 2rem;
+}
+
+.article-author{
+    font-size: 1.3rem;
+}
+.article-heading{
+    font-size: 1.7rem;
+    font-weight: normal;
+    color: var(--dark-blue);
+}
+.article-except{
+    font-size: 1.2rem;
+
+}
+
+/* ***** Footer ****** */
+/* ***** Footer ****** */
+/* ***** Footer ****** */
+
+footer{
+    background-color: var(--dark-blue);
+    margin-top: 1rem;
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    row-gap: 3rem;
+    column-gap: 2rem;
+    /* height: 20rem; */
+}
+
+.footer-icons a{
+    padding-right: 1rem;
+}
+
+.footer-links ul li{
+    padding-bottom: 1.5rem;
+    list-style: none;
+}
+.footer-links ul li a{
+    color: var(--grayish-blue);
+
+}
+
+.footer-links ul li a:hover{
+    color: var(--lime-green);
+    
+}
 
 
 
 /***************** MEDIA QUERY**************/
 /***************** MEDIA QUERY**************/
 /***************** MEDIA QUERY**************/
-/***************** MEDIA QUERY**************/
+
 
 
 
@@ -391,9 +471,11 @@ nav ul li a:hover::before{
         right: 0;
         z-index: 1;
     }
+
+    
       /* About section */
       /* About section */
-      /* About section */
+      
     .about-text{
     width: 50%;
     text-align: left;
@@ -404,4 +486,24 @@ nav ul li a:hover::before{
     
 }
 
+
+/***********Animation Effect***** */
+/**********Animation Effect***** */
+/****** Animation Effect***** */
+@keyframes moveUp{
+    0%{
+        transform: translateY(100%);
+    }
+    50%{
+        transform: translateY(50%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+
+}
+
+.moveUp{
+    animation: moveUp 1s 1 linear;
+}
     
