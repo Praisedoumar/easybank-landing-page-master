@@ -472,7 +472,7 @@ footer{
         z-index: 1;
     }
 
-    
+
       /* About section */
       /* About section */
       
@@ -489,7 +489,7 @@ footer{
 
 /***********Animation Effect***** */
 /**********Animation Effect***** */
-/****** Animation Effect***** */
+
 @keyframes moveUp{
     0%{
         transform: translateY(100%);
