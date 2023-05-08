@@ -313,14 +313,20 @@ footer{
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     row-gap: 3rem;
     column-gap: 2rem;
-    /* height: 20rem; */
+    margin: 1rem auto;
+    align-items: center;
+    
 }
-
+.footer-icon img{
+    margin-top: 1rem;
+}
 .footer-icons a{
-    padding-right: 1rem;
+    padding-right: 3rem;
+    gap: 1rem;
 }
 
 .footer-links ul li{
+    margin-top: 1rem;
     padding-bottom: 1.5rem;
     list-style: none;
 }
@@ -330,6 +336,17 @@ footer{
 }
 
 .footer-links ul li a:hover{
+    color: var(--lime-green);
+    
+}
+.foot-credit{
+    margin-top: 3rem;
+}
+.foot-text{
+    color: var(--grayish-blue);
+    font-size: small;
+}
+.foot-text:hover{
     color: var(--lime-green);
     
 }
@@ -403,6 +420,20 @@ footer{
         border-radius: 4px;
         padding: 5px;
     }
+    .footer{
+        display: grid;
+        align-items: center;
+        justify-content: flex-end;
+        grid-template-columns: repeat(auto-fit, minmax(15rem, .5fr));
+        row-gap: 3rem;
+        column-gap: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+        row-gap: 4rem;
+        
+        
+    }
+
+   
 }
 
 /*Media query for the welcome section*/
@@ -479,6 +510,7 @@ footer{
     .about-text{
     width: 50%;
     text-align: left;
+    
     }
     .about-text-box{
         text-align: left;
@@ -489,7 +521,7 @@ footer{
 
 /***********Animation Effect***** */
 /**********Animation Effect***** */
-
+/* 
 @keyframes moveUp{
     0%{
         transform: translateY(100%);
@@ -505,5 +537,5 @@ footer{
 
 .moveUp{
     animation: moveUp 1s 1 linear;
-}
+} */
     
