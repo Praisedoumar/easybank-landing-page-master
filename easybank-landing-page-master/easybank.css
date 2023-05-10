@@ -123,7 +123,7 @@ nav ul li a::before{
     opacity: 0;
     transform: scaleX(0);
     transform-origin: left;
-    transition: all .5s;
+    transition: all .6s;
 
     
 }
